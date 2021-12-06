@@ -53,27 +53,33 @@ header .sign-login .log {
     color: black;
     text-decoration: none;
 }
+
+@media (max-width:1024px){
+    header .sign-login {
+       display: none;
+    }
+}
+
 .container-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .container-1 
 #background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
+  width: 100%;
+  height: vh;
+  object-fit: contain;
+  position:absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
 }
-.container-1 #background-video video {
-    width: 100%;
-}
+
 .container-1 h1 {
     color: white;
     font-weight: bold;
@@ -102,21 +108,15 @@ font-size: 2.3rem;
 padding: 1.5rem 3.4rem;
 background-color: #393B3D;
 font-size: 2rem;
+display: block;
 text-decoration: none;
 color: white;
 border-radius: 1.3rem;
 }
 .container-1  h2 { font-size: 3rem; }
 @media (max-width: 750px) {
-    /* #background-video { display: none; }
-    body {
-      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-      background-size: cover;
-    } */
-    .container-1 
-#background-video {
-height: auto;
-}
+
+
     .container-1 h5 {
 font-size: 2rem;
 text-align: left;
@@ -128,4 +128,53 @@ margin-left: 1rem;
 font-weight: 500;
 
       }
+      .container-1 
+#background-video {
+ 
+  height:100vh;
+
+}
+}
+
+.container-2 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #DEE1E3;
+
+
+    height: 100vh;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.row-conn {
+    width: 50%;
+    display: flex;
+}
+.col-conn  , .col-conn-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.4rem 0;
+}
+.col-conn p , .col-conn-2 p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+} 
+.col-conn h4 , .col-conn-2 h4 {
+    font-size: 2rem;
+font-weight: 400;
+    text-align: center;
+    margin: 2rem 0;
+} 
+@media (max-width:820px){
+    .row-conn {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container-2 {
+       height:auto;
+    }
 }
