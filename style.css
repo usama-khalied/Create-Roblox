@@ -60,6 +60,8 @@ header .sign-login .log {
     }
 }
 
+/* section-1 start */
+
 .container-1 {
     display: flex;
     flex-direction: column;
@@ -143,6 +145,8 @@ font-weight: 500;
 }
 }
 
+/* section-2 start */
+
 .container-2 {
     width: 100%;
     position: relative;
@@ -181,7 +185,59 @@ font-weight: 400;
         width: 100%;
         flex-direction: column;
     }
-    .container-2 {
+    .container-2 
+    {
        height:auto;
     }
+}
+
+/* section-3 start  Slider section*/
+.slider-sec {
+    background-color: #DEE1E3;
+    padding: 3rem 0 0;
+}
+.slider-sec h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.swiper {
+    width: 70%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 0 3rem;
+  }
+
+.slide-content {
+    height: 30vh;
+    width: 70%;
+    background-color: white;
+}
+.slide-content p{
+margin: 6rem 2rem 0;
+line-height: 1.4;
+}
+.slide-content h6 {
+    margin:  3rem 0 0;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
 }
