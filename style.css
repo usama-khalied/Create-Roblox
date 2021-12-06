@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html {
-
+scroll-behavior: smooth;
     font-size: 62.5%;
 }
 body {
@@ -115,8 +115,15 @@ border-radius: 1.3rem;
 }
 .container-1  h2 { font-size: 3rem; }
 @media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
 
-
+    .container-1 {
+        height: auto;
+    }
     .container-1 h5 {
 font-size: 2rem;
 text-align: left;
