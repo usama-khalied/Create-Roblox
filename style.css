@@ -119,7 +119,7 @@ border-radius: 1.3rem;
 .container-1  h2 { font-size: 3rem; }
 @media (max-width: 750px) {
     #background-video { display: none; }
-    body {
+    .container-1 {
       background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
       background-size: cover;
     }
@@ -251,6 +251,13 @@ line-height: 1.4;
 .slide-content img {
     width: 90px;
 }
+@media (max-width:1200px){
+    
+.slide-content {
+    height: auto;
+}
+}
+
 /* ----section-5 start */
 .address {
     width: 100%;
@@ -292,3 +299,69 @@ width: 40%;
     text-align: center;
     text-decoration:underline;
 }
+@media (max-width:1024px){
+    .row-address {
+flex-direction: column;
+align-items:left;
+justify-content: left;
+    } 
+    .col-add-1  {
+        margin: 4rem 0;
+        width: 100%;
+        padding: 0 3rem 0;
+        }
+        .address {
+          height: auto;
+        }
+        .col-add  {
+            width: 60%;
+        }
+    }
+
+    .footer-1 {
+        margin: 3rem 0 0;
+        width: 100%;
+        height: 60vh;
+        background: url(images/bg_bottom_banner.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-footer  a{
+        padding: 1.5rem 3.4rem;
+background-color: #393B3D;
+font-size: 2rem;
+display: inline-block;
+text-align: center;
+/* display: block; */
+text-decoration: none;
+color: white;
+border-radius: 1.3rem;
+    }
+    .content-footer h5 {
+        font-size: 2.5rem;
+        margin: 0 0 3rem;
+        font-weight: 500;
+        color: #fff;
+    }
+    .content-footer .icon {
+        display: flex;
+    }
+    .content-footer .icon .fab {
+        margin: 3rem 0.65rem 0;
+        color: white;
+        font-size: 2.5rem;
+    }
+    @media (max-width:450px){
+        .content-footer {
+            margin: 0 3rem 0;
+        }
+    }
